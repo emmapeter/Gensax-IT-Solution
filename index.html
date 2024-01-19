@@ -11,14 +11,7 @@
 </head>
 
 <body>
-
-    <div class="container">
-
-        <div class="content_one">
-
-            <div class="content_one_sub">
-
-                <header>
+    <header>
 
                     <div class="logo">
                         <h1><a href="#">Gensax IT solution</a></h1>
@@ -57,6 +50,10 @@
 
                 </header>
 
+
+    <div class="container">
+        <div class="content_one">
+            <div class="content_one_sub">
                 <div class="content_one_sub_container">
 
                     <div class="content_one_sub_container_text">
@@ -517,6 +514,7 @@
 
                         <script>
                             let currentSlide = 0;
+                            let intervalId;
 
                             function showSlide(index) {
                                 const slides = document.querySelectorAll('.Card_Box');
@@ -526,14 +524,25 @@
                             }
 
                             function changeSlide(direction) {
-                                if (direction === 'prev') {
-                                    showSlide(currentSlide - 1);
-                                } else {
-                                    showSlide(currentSlide + 1);
-                                }
+                                showSlide(direction === 'prev' ? currentSlide - 1 : currentSlide + 1);
                             }
-                        </script>
 
+                            function startAutoScroll() {
+                                intervalId = setInterval(function() {
+                                    changeSlide('next');
+                                }, 3000); // Adjust the interval duration as needed
+                            }
+
+                            function stopAutoScroll() {
+                                clearInterval(intervalId);
+                            }
+
+                            // Start auto-scroll when the page loads
+                            window.onload = startAutoScroll;
+
+                            // Stop auto-scroll on mouseover
+                            document.querySelector('.Card_Box_Container').addEventListener('mouseover', stopAutoScroll);
+                        </script>
                     </div>
                 </div>
             </div>
@@ -548,5 +557,9 @@
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
+<script src="app.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", ShadowScroller);
+</script>
 
 </html>
