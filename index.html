@@ -27,7 +27,6 @@
                     <nav>
 
                         <ul>
-
                             <li>
                                 <a href="#">Home</a>
                             </li>
@@ -41,7 +40,7 @@
                             </li>
 
                             <li>
-                                <a href="#">Bolg</a>
+                                <a href="#">Blog</a>
                             </li>
 
                             <li>
@@ -66,15 +65,14 @@
 
                         <h1>Gensax IT Solutions: Empowering Your Digital Success</h1>
 
-                        <p>Gensax IT Solutions is a dynamic and innovative company dedicated to providing cutting-edge
-                            technological solutions. With a focus on empowering businesses for digital success, we
-                            specialize in developing and implementing comprehensive IT strategies</p>
+                        <p>Gensax IT Solutions is a dynamic and innovative company dedicated to providing cutting-edge technological solutions. With a focus on empowering businesses for digital success, we specialize in developing and implementing comprehensive IT strategies</p>
 
-                        <div class="email_conntent">
+                        <div class="email_content">
                             <input type="text" placeholder="Enter Your Email....">
-                            <a href="">Let's Talk <div class="content_three_sub_container_link_img">
-                                    <img src="img/arrow.png" alt="">
-                                </div></a>
+                            <a href="" class="content_three_sub_container_link_btn">
+                                <div>Let's Talk</div>
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
                         </div>
 
                     </div>
@@ -88,7 +86,7 @@
                             <img src="img/Screenshot_2024-01-17_020007-removebg-preview.png" alt="">
 
                             <div class="content_one_sub_container_img_sub_data">
-                                <img src="img/arrow.png" alt="">
+                                <i class='bx bx-right-arrow-alt'></i>
                             </div>
 
                         </div>
@@ -118,9 +116,8 @@
                     <div class="content_two_sub_container_details">
 
                         <div class="content_two_sub_container_details_shape"></div>
-
+                        
                         <div class="content_two_sub_container_details_img">
-
                             <img src="img/img1.png" alt="">
                         </div>
 
@@ -129,13 +126,11 @@
                             <p>Benefit from our expert team's cutting-edge solutions, driving innovation for your
                                 business.</p>
                         </div>
-
                     </div>
 
                     <div class="content_two_sub_container_details">
 
                         <div class="content_two_sub_container_details_img">
-
                             <img src="img/img3.png" alt="">
                         </div>
 
@@ -150,7 +145,6 @@
                     <div class="content_two_sub_container_details">
 
                         <div class="content_two_sub_container_details_img">
-
                             <img src="img/img4.png" alt="">
                         </div>
 
@@ -177,9 +171,10 @@
                 <div class="content_three_sub_container">
 
                     <div class="content_three_sub_container_link">
-                        <a href="#">Find Out More <div class="content_three_sub_container_link_img">
-                                <img src="img/arrow.png" alt="">
-                            </div></a>
+                        <a href="#" class="content_three_sub_container_link_img">
+                            <div>Find Out More</div>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
                     </div>
 
                     <div class="content_three_sub_container_details">
@@ -464,53 +459,84 @@
                     </div>
 
                     <div class="content_six_sub_container_details">
-
-                        <!-- Slider main container -->
-                        <div class="swiper">
-
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="card_box">
-                                        <!-- Card content -->
-                                        <img src="img/filt3.jpg">
-
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dolor
-                                            sapiente omnis quidem expedita architecto.</p>
-                                        <h3>Card Title</h3>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="card_box">
-                                        <!-- Card content -->
-                                        <img src="img/filt5.jpg">
-
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, saepe.
-                                            Accusantium voluptatem est blanditiis quis.</p>
-                                        <h3>Card Title</h3>
-                                    </div>
-                                </div>
-
-                                <!-- More slides with cards -->
-
+                        
+                        <div class="TestimonialSliderContainer">
+                            <div class="SliderBtnContainer">
+                                <div class="SliderBtn" onclick="changeSlide('prev')"><i class='bx bxs-chevron-left'></i></div>
+                                <div class="SliderBtnRight" onclick="changeSlide('next')"><i class='bx bxs-chevron-right'></i></div>
                             </div>
 
-                            <!-- If navigation buttons needed -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <div class="Card_Box active">
+                                <div class="Card_Box_Container">
+                                    <img src="img/portrait.jpg" alt="Portrait of Almold Authur">
+                                </div>
+                                
+                                <div class="Card_Box_Container_Content">
+                                    <h2>Gensax IT <span>Solutions</span></h2>
+                                    <p>Greetings, I take great pride in sharing my enriching journey collaborating with Gensax IT Solutions – a pioneering force in the realm of cutting-edge technology and innovation.</p>
+                                </div>
 
-                        </div>>
+                                <div class="Card_Box_Container_Flex">
+                                    <span>Paul Richard</span>
+                                    <span>Backend Developer</span>
+                                </div>
+                            </div>                        
+
+                            <div class="Card_Box">
+                                <div class="Card_Box_Container">
+                                    <img src="img/team1.png" alt="Team member at Gensax IT Solutions">
+                                </div>
+                                
+                                <div class="Card_Box_Container_Content">
+                                    <h2>Gensax IT <span>Solutions</span></h2>
+                                    <p>Salutations! It is my pleasure to recount the valuable experiences garnered while working alongside Gensax IT Solutions – a trailblazer in the dynamic landscape of technology and innovation.</p>
+                                </div>
+
+                                <div class="Card_Box_Container_Flex">
+                                    <span>Almold Authur</span>
+                                    <span>Full Stack Developer</span>
+                                </div>
+                            </div>
+
+                            <div class="Card_Box">
+                                <div class="Card_Box_Container">
+                                    <img src="img/team3.png" alt="Team member at Gensax IT Solutions">
+                                </div>
+                                
+                                <div class="Card_Box_Container_Content">
+                                    <h2>Gensax IT <span>Solutions</span></h2>
+                                    <p>Greetings! It brings me immense satisfaction to recount my journey collaborating with Gensax IT Solutions – a catalyst for transformative technology and innovation on a global scale.</p>
+                                </div>
+
+                                <div class="Card_Box_Container_Flex">
+                                    <span>Luke James</span>
+                                    <span>Frontend Developer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            let currentSlide = 0;
+
+                            function showSlide(index) {
+                                const slides = document.querySelectorAll('.Card_Box');
+                                slides[currentSlide].classList.remove('active');
+                                currentSlide = (index + slides.length) % slides.length;
+                                slides[currentSlide].classList.add('active');
+                            }
+
+                            function changeSlide(direction) {
+                                if (direction === 'prev') {
+                                    showSlide(currentSlide - 1);
+                                } else {
+                                    showSlide(currentSlide + 1);
+                                }
+                            }
+                        </script>
 
                     </div>
-
                 </div>
-
-
             </div>
-
         </div>
 
 
