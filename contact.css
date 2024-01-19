@@ -68,6 +68,32 @@ header {
     border-radius: 100px;
 }
 
+header.shadow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--header_color);
+    border-radius: 100px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 2%;
+    left: 0;
+    right: 0;
+    max-width: 95%;
+    margin: auto;
+    animation: 1s NavHidden;
+}
+
+@keyframes NavHidden {
+    0%{
+        transform: translate(0, -150%);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
 
 
 .logo a {
